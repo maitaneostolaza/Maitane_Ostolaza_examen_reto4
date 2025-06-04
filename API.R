@@ -17,7 +17,7 @@ library(plumber)
 #* @param transformacion
 #* @get /histograma
 function(transformacion){
-  datos <- read.csv("C:\\Users\\maita\\OneDrive\\Escritorio\\RETO 4\\DATA SCIENCE\\Maitane_Ostolaza_examen_reto4\\netflix.csv")
+  datos <- read.csv("netflix.csv")
   datos$Minutes <- as.numeric(datos$Minutes)
   variable <- datos$Minutes
   variable_transformado <- log(variable)
